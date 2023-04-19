@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'aula1804';
+  appBotaoClick():void{
+    console.log("appcomponent---botaoComponet")
+  }
 }
