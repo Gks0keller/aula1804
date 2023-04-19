@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from "@angular/core";
+import { Component, EventEmitter, Input, Output } from "@angular/core";
 
 @Component({
     selector: 'app-botao',
@@ -8,8 +8,19 @@ import { Component, EventEmitter, Output } from "@angular/core";
 
 export class BotaoComponent{
     @Output()
-    clickBotao=new EventEmitter
+    clickBotao=new EventEmitter()
     
+@Output()
+mouseOverBotao=new EventEmitter()
+
+@Input()
+conteudo:String;
+
+    mouseOver(){
+        console.log("mouseOver botaocomponent")
+        this.mouseOverBotao.emit()
+    }
+
     botaoClick():void{
         console.log("botaocomponent----botaoClik")
         this.clickBotao.emit()

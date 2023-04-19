@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { BotaoComponent } from './botao/botao.component';
 import { BotaoModule } from './botao/botao.modules';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -11,8 +12,8 @@ import { BotaoModule } from './botao/botao.modules';
     BotaoComponent
   ],
   imports: [
-    BrowserModule
-    
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

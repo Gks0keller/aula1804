@@ -9,4 +9,7 @@ export class AppComponent {
   appBotaoClick():void{
     console.log("appcomponent---botaoComponet")
   }
+  mouseOverBotao():void{
+    console.log("MouseOver appComponent")
+  }
 }
